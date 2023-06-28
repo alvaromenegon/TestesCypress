@@ -16,7 +16,7 @@ describe('Cenario 1', () => {
     cy.wait(100);
     cy.get('.bm-menu-wrap').should('be.visible');
     cy.wait(100);
-    cy.get('button[id=reasct-burger-cross-btn]').click();
+    cy.get('button[id=react-burger-cross-btn]').click();
     cy.wait(100);
     cy.get('.bm-menu-wrap').should('not.be.visible'); 
     cy.wait(100);
@@ -38,7 +38,7 @@ describe('Cenario 1', () => {
     cy.wait(100);
     cy.get('button[id=react-burger-menu-btn]').click();
     cy.wait(100);
-    cy.get('button[id=logout_sidebar_link]').click();
+    cy.get('a[id=logout_sidebar_link]').click();
     cy.wait(100);
     cy.url().should('include', '/index.html');
   })
