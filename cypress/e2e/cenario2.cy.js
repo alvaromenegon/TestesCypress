@@ -44,11 +44,11 @@ describe('Cenario 2', () => {
         cy.wait(100);
         cy.get('.inventory_list').find('.inventory_item').first().find('img[class=inventory_item_img]').should('have.attr', 'src', '/static/media/red-tatt-1200x1500.30dadef4.jpg');
         cy.wait(100);
-        cy.get('button[id=add-to-cart-test.allthethings()-t-shirt-(red)]').click();
+        cy.get('#add-to-cart-test.allthethings()-t-shirt-(red)').click();
         cy.wait(100);
         cy.get('span[class=shopping_cart_badge]').should('have.text', '1');
         cy.wait(100);
-        cy.get('button[id=add-to-cart-test.allthethings()-t-shirt-(red)]').should('have.text', 'Remove');
+        cy.get('#add-to-cart-test.allthethings()-t-shirt-(red)').should('have.text', 'Remove');
         cy.wait(100);
         cy.get('a.shopping_cart_link').should('not.have.descendants', 'span.shopping_cart_badge');
         cy.wait(100);

@@ -42,7 +42,7 @@ describe('Cenario 4', () => {
         cy.wait(100);
         cy.url().should('include', '/checkout-complete.html');
         cy.wait(100);
-        cy.get('h2[class=complete-header]').should('have.text', 'Thank you for your order');
+        cy.get('h2[class=complete-header]').should('have.text', 'Thank you for your order!');
         cy.wait(100);
         cy.get('div[class=complete-text]').should('have.text', 'Your order has been dispatched, and will arrive just as fast as the pony can get there!');
         cy.wait(100);
