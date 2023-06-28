@@ -32,7 +32,7 @@ describe('Cenario 4', () => {
         cy.wait(100);
         cy.get('input[id=postal-code]').type('00000000');
         cy.wait(100);
-        cy.get('button[id=continue]').click();
+        cy.get('input[id=continue]').click();
         cy.wait(100);
         cy.url().should('include', '/checkout-step-two.html');
         cy.wait(100);
