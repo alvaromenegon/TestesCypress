@@ -53,7 +53,7 @@ describe('Cenario 4', () => {
         cy.get('a.shopping_cart_link').should('not.have.descendants', 'span.shopping_cart_badge');
         cy.wait(100);
         cy.get('button[id=react-burger-menu-btn]').click();
-        cy.wait(100);
+        cy.wait(600);
         cy.get('a[id=logout_sidebar_link]').click();
         cy.wait(100);
         cy.url().should('be.equal', 'https://www.saucedemo.com/');
