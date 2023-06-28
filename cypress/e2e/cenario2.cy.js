@@ -32,7 +32,7 @@ describe('Cenario 2', () => {
         cy.wait(100);
         cy.get('.inventory_list').find('.inventory_item').first().find('.inventory_item_price').should('have.text', '$7.99');
         cy.wait(100);
-        cy.get('inventory_list').find('.inventory_item').first().find('img[class=inventory_item_img]').should('have.attr', 'src', '/static/media/red-onesie-1200x1500.2ec615b2.jpg');
+        cy.get('.inventory_list').find('.inventory_item').first().find('img[class=inventory_item_img]').should('have.attr', 'src', '/static/media/red-onesie-1200x1500.2ec615b2.jpg');
         cy.wait(100);
         cy.get('.select_container').find('.product_sort_container').select('Name (Z to A)');
         cy.wait(100);

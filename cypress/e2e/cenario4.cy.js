@@ -36,6 +36,8 @@ describe('Cenario 4', () => {
         cy.wait(100);
         cy.url().should('include', '/checkout-step-two.html');
         cy.wait(100);
+        cy.get('.cart_item').should('have.length', 2);
+        cy.wait(100);
         cy.get('button[id=finish]').click();
         cy.wait(100);
         cy.url().should('include', '/checkout-complete.html');
