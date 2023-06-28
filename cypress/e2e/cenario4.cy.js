@@ -52,9 +52,9 @@ describe('Cenario 4', () => {
         cy.wait(100);
         cy.get('button[id=react-burger-menu-btn]').click();
         cy.wait(100);
-        cy.get('button[id=logout_sidebar_link]').click();
+        cy.get('a[id=logout_sidebar_link]').click();
         cy.wait(100);
-        cy.url().should('include', '/index.html');
+        cy.url().should('be.equal', 'https://www.saucedemo.com/');
 
     })
 })

@@ -40,7 +40,7 @@ describe('Cenario 1', () => {
     cy.wait(100);
     cy.get('a[id=logout_sidebar_link]').click();
     cy.wait(100);
-    cy.url().should('include', '/index.html');
+    cy.url().should('be.equal', 'https://www.saucedemo.com/')
   })
 })
 
